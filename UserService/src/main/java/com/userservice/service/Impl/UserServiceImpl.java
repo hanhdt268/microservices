@@ -10,6 +10,7 @@ import com.userservice.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -31,6 +32,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private HotelService hotelService;
+
+
     private Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
